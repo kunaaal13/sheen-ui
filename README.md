@@ -1,32 +1,108 @@
-# Turborepo Svelte starter
+# Sheen UI
 
-This Turborepo starter is maintained by the Turborepo core team.
+A headless UI component library for Svelte 5 — striking the perfect balance between low-level primitives and fully-featured components.
 
-## Using this example
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Svelte](https://img.shields.io/badge/svelte-5-orange.svg)](https://svelte.dev)
 
-Run the following command:
+## Philosophy
 
-```sh
-npx create-turbo@latest -e with-svelte
+Sheen UI occupies the sweet spot between [Base UI](https://base-ui.com/) and [Melt UI](https://melt-ui.com/):
+
+- **More opinionated than Base UI** — Get sensible defaults and patterns out of the box without building everything from scratch
+- **More flexible than Melt UI** — Maintain full control over rendering and styling without being locked into specific implementations
+
+Sheen UI provides accessible, unstyled components that handle the complex logic (focus management, keyboard navigation, ARIA attributes) while leaving the visual design entirely up to you.
+
+## Features
+
+- 🎨 **Completely unstyled** — Bring your own design system
+- ♿ **Accessible by default** — WAI-ARIA compliant components
+- 🔧 **Fully customizable** — Control every aspect of rendering
+- ⚡ **Svelte 5 native** — Built with runes and modern Svelte patterns
+- 📦 **Tree-shakeable** — Only ship what you use
+- 🔒 **Type-safe** — Full TypeScript support
+
+## Installation
+
+```bash
+# npm
+npm install sheen-ui
+
+# pnpm
+pnpm add sheen-ui
+
+# bun
+bun add sheen-ui
 ```
 
-## What's inside?
+## Quick Start
 
-This Turborepo includes the following packages/apps:
+```svelte
+<script>
+  import { Button } from 'sheen-ui';
+</script>
 
-### Apps and Packages
+<Button>Click me</Button>
+```
 
-- `docs`: a [svelte-kit](https://kit.svelte.dev/) app
-- `web`: another [svelte-kit](https://kit.svelte.dev/) app
-- `ui`: a stub Svelte component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-plugin-svelte` and `eslint-config-prettier`)
+## Documentation
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Coming soon...
 
-### Utilities
+---
 
-This Turborepo has some additional tools already setup for you:
+## Development
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+This project uses [Turborepo](https://turbo.build/repo) for monorepo management and [Bun](https://bun.sh) as the package manager.
+
+### Project Structure
+
+```
+sheen-ui/
+├── apps/
+│   └── web/              # Documentation & demo SvelteKit app
+├── packages/
+│   ├── ui/               # Core Sheen UI component library
+│   ├── eslint-config/    # Shared ESLint configuration
+│   └── typescript-config/# Shared TypeScript configuration
+├── turbo.json            # Turborepo configuration
+└── package.json          # Root workspace configuration
+```
+
+### Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/kunaaal13/sheen-ui.git
+cd sheen-ui
+
+# Install dependencies
+bun install
+
+# Start development
+bun run dev
+```
+
+### Available Scripts
+
+| Command               | Description                            |
+| --------------------- | -------------------------------------- |
+| `bun run dev`         | Start development servers for all apps |
+| `bun run build`       | Build all packages and apps            |
+| `bun run lint`        | Lint all packages and apps             |
+| `bun run format`      | Format code with Prettier              |
+| `bun run check-types` | Run TypeScript type checking           |
+
+### Requirements
+
+- Node.js >= 18
+- Bun >= 1.3.3
+
+## Contributing
+
+Contributions are welcome! Please read our contributing guidelines before submitting a pull request.
+
+## License
+
+MIT © kunaaal13
