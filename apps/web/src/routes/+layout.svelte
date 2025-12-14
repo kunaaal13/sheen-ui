@@ -2,6 +2,6 @@
 	import '../app.css';
 </script>
 
-<div class="min-h-screen bg-gray-50">
+<div class="min-h-screen bg-[#1f1f1f] text-white">
 	<slot />
 </div>
