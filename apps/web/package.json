@@ -16,7 +16,9 @@
 		"test:unit": "vitest"
 	},
 	"dependencies": {
-		"@sheen/ui": "workspace:*"
+		"@sheen/ui": "workspace:*",
+		"@tailwindcss/vite": "^4.1.18",
+		"tailwindcss": "^4.1.18"
 	},
 	"devDependencies": {
 		"@sheen/eslint-config": "workspace:*",
