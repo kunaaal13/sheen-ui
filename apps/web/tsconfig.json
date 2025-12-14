@@ -1,3 +1,0 @@
-{
-	"extends": ["@sheen-ui/typescript-config/svelte.json", "./.svelte-kit/tsconfig.json"]
-}
