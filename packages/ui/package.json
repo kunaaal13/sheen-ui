@@ -1,5 +1,5 @@
 {
-  "name": "@sheen-ui/ui",
+  "name": "@sheen/ui",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -29,8 +29,8 @@
     "svelte": "^5.0.0"
   },
   "devDependencies": {
-    "@sheen-ui/eslint-config": "*",
-    "@sheen-ui/typescript-config": "*",
+    "@sheen/eslint-config": "workspace:*",
+    "@sheen/typescript-config": "workspace:*",
     "@sveltejs/kit": "^2.49.0",
     "@sveltejs/package": "^2.5.0",
     "@sveltejs/vite-plugin-svelte": "^5.1.0",

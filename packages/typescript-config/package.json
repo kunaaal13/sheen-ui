@@ -1,10 +1,13 @@
 {
-  "name": "@sheen-ui/typescript-config",
+  "name": "@sheen/typescript-config",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    "./svelte.json": "./svelte.json"
   }
 }

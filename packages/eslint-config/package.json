@@ -1,5 +1,5 @@
 {
-  "name": "@sheen-ui/eslint-config",
+  "name": "@sheen/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "publishConfig": {
