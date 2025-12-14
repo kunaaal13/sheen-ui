@@ -13,7 +13,8 @@ export default defineConfig({
 	server: {
 		fs: {
 			allow: ['..']
-		}
+		},
+		port: 3000
 	},
 	optimizeDeps: {
 		include: ['@sheen/ui']
